@@ -109,6 +109,14 @@ class ListingController extends Controller {
                 $list->founded = @$l["fields"]["Founded"];
                 $list->closed = @$l["fields"]["Closed"];
 
+                $list->mastodon = @$l["fields"]["Mastodon"];
+                $list->rss = @$l["fields"]["RSS"];
+                $list->bluesky_url = @$l["fields"]["Bluesky URL"];
+                $list->threads = @$l["fields"]["Threads"];
+                $list->whatsapp_community_url = @$l["fields"]["Whatsapp Community URL"];
+                $list->telegram_community_url = @$l["fields"]["Telegram Community URL"];
+                $list->discord_url = @$l["fields"]["Discord URL"];
+
                 $list->shutdown_reason = @$l["fields"]["If shutdown,what happened?"];
                 $list->postmortem = @$l["fields"]["Postmortem"];
                 $list->host_organization_url = @$l["fields"]["Host organization URL"];
