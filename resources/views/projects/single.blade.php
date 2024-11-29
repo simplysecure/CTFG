@@ -433,6 +433,33 @@
                         @if(!empty(@$project->blog_url))
                             <li>Blog: <span><a href="{{ @$project->blog_url }}" target="_blank">{{ @$project->blog_url }}</a></span></li>
                         @endif
+                        @if(!empty(@$project->tiktok_url))
+                            <li>TikTok: <span><a href="{{ @$project->tiktok_url }}" target="_blank">{{ @$project->tiktok_url }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->slack_url))
+                            <li>Slack: <span><a href="{{ @$project->slack_url }}" target="_blank">{{ @$project->slack_url }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->mastodon))
+                            <li>Mastodon: <span><a href="{{ @$project->mastodon }}" target="_blank">{{ @$project->mastodon }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->threads))
+                            <li>Threads: <span><a href="{{ @$project->threads }}" target="_blank">{{ @$project->threads }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->bluesky_url))
+                            <li>BlueSky: <span><a href="{{ @$project->bluesky_url }}" target="_blank">{{ @$project->bluesky_url }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->rss))
+                            <li>RSS: <span><a href="{{ @$project->rss }}" target="_blank">{{ @$project->rss }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->whatsapp_community_url))
+                            <li>Whatsapp: <span><a href="{{ @$project->whatsapp_community_url }}" target="_blank">{{ @$project->whatsapp_community_url }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->telegram_community_url))
+                            <li>Telegram: <span><a href="{{ @$project->telegram_community_url }}" target="_blank">{{ @$project->telegram_community_url }}</a></span></li>
+                        @endif
+                        @if(!empty(@$project->discord_url))
+                            <li>Discord: <span><a href="{{ @$project->discord_url }}" target="_blank">{{ @$project->discord_url }}</a></span></li>
+                        @endif
                         @if(!empty(@$project->parent_id))
                             <li>Parent Org: <span><a  style="color: #0A72B8;" href="/listing/{{ $project->parent->slug }}">{{ @$project->parent->name }}</a></span></li>
                         @endif
